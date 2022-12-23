@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Operation Management (Redux)</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="context">
+        <div class="contenu">
+          <h1 class="total_balance">Total Balance :</h1>
+          <p class="balance">
+            <input
+              type="number"
+              placeholder="Add Balance"
+              autofocus
+              id="balance"
+            />
+          </p>
+          <span id="msg"></span>
+        </div>
+      </section>
+      <section class="operation">
+        <div class="deposit">
+          <h2>Deposit</h2>
+          <span id="deposite_msg"></span>
+          <input type="number" placeholder="deposit amount" id="deposit" />
+          <button id="deposit_btn">Deposit</button>
+        </div>
+        <div class="withdraw">
+          <h2>Withdraw</h2>
+          <span id="withdraw_msg"></span>
+          <input type="number" placeholder="withdraw amount" id="withdraw" />
+          <button id="withdraw_btn">Withdraw</button>
+        </div>
+      </section>
+      <h2 class="description">
+        <p>
+          this project made using: <mark>Redux</mark>, <mark>JavaScript</mark>
+        </p>
+      </h2>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.js"></script>
+    <script src="./js/client.js"></script>
+  </body>
+</html>
